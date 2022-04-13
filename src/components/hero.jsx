@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import logo from "../../assets/Logo.svg";
-import planet_icon from "../../assets/ion_planet-sharp.svg";
+import logo from "../assets/Logo.svg";
+import planet_icon from "../assets/ion_planet-sharp.svg";
 
 const Hero = () => {
   const [menuClick, setMenuClicked] = useState(false);

@@ -1,3 +1,23 @@
+#counter {
+  display: none;
+}
+
+#name {
+  position: absolute;
+  font-size: 9.5rem;
+  font-weight: 600;
+  opacity: 50%;
+  letter-spacing: 2.5px;
+  margin-left: 1rem;
+  -webkit-transform: translateY(-8rem);
+          transform: translateY(-8rem);
+}
+
+#scale {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
 #link {
   text-decoration: none;
   color: inherit;
@@ -266,5 +286,55 @@ body {
   position: absolute;
   bottom: -12rem;
   left: 45%;
+}
+
+.planets__container {
+  background-color: #363636;
+  padding-top: 1rem;
+}
+
+.template__container {
+  background-color: #363636;
+}
+
+.template__content {
+  background-color: #1f1f1f;
+}
+
+.template__content__background {
+  margin: 0 auto;
+}
+
+.template__content__background .image {
+  margin: 1rem;
+  margin-top: 10rem;
+  background-color: black;
+  position: relative;
+}
+
+.template__content__background .image::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 1rem;
+  width: 100%;
+  top: 0;
+  background: #1f1f1f;
+}
+
+.template__content__background .image__in {
+  width: 80%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.template__content__background img {
+  max-width: 100%;
+  margin: 5rem auto;
+}
+
+.template__content__features li {
+  list-style: none;
+  margin-left: 2.5rem;
 }
 /*# sourceMappingURL=App.css.map */

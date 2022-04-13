@@ -1,5 +1,6 @@
 $background-color: black;
 $white: #f0f0f0;
+$template-bg: #1f1f1f;
 
 $font-extra-light: 200;
 $font-light: 300;
@@ -18,6 +19,24 @@ $s: #c59f6b;
 $u: #9fc3c8;
 $n: #475ed6;
 
+#counter {
+  display: none;
+}
+
+#name {
+  position: absolute;
+  font-size: 9.5rem;
+  font-weight: $font-semi-bold;
+  opacity: 50%;
+  letter-spacing: 2.5px;
+  margin-left: 1rem;
+  transform: translateY(-8rem);
+}
+
+#scale {
+  transform: scale(1.5);
+}
+
 #link {
   text-decoration: none;
   color: inherit;
@@ -28,6 +47,8 @@ body {
   background-color: $background-color;
   color: white;
 }
+
+//! HERO SECTION
 
 .menu {
   color: black;
@@ -254,6 +275,63 @@ body {
       position: absolute;
       bottom: -12rem;
       left: 45%;
+    }
+  }
+}
+
+//!    Hero section end
+
+//!   PLANETS section
+
+.planets__container {
+  background-color: #363636;
+  padding-top: 1rem;
+}
+
+.planets__content {
+}
+
+.template__container {
+  background-color: #363636;
+}
+
+.template__content {
+  background-color: #1f1f1f;
+
+  &__background {
+    margin: 0 auto;
+    .image {
+      margin: 1rem;
+      margin-top: 10rem;
+
+      background-color: black;
+      position: relative;
+      &::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        height: 1rem;
+        width: 100%;
+        top: 0;
+        background: #1f1f1f;
+      }
+      &__in {
+        width: 80%;
+        overflow: hidden;
+
+        margin: 0 auto;
+      }
+    }
+    img {
+      max-width: 100%;
+      margin: 5rem auto;
+    }
+  }
+
+  &__features {
+    li {
+      list-style: none;
+      margin-left: 2.5rem;
     }
   }
 }

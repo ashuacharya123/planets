@@ -1,0 +1,23 @@
+{
+  "0": {
+    "name": "Mercury",
+    "features": [
+      {
+        "SMALL WORLD": "Mercury is the smallest planet in our solar system only slightly larger than Earth's Moon.",
+        "ROUGH SURFACE": "Mercury is a rocky planet, also known as a terrestrial planet. Mercury has a solid, cratered surface, much like the Earth's moon.",
+        "FASTEST PLANET": "Mercury is the fastest planet in our solar system – traveling through space at nearly 29 miles (47 kilometers) per second.",
+        "MOONLESS": "Mercury has no moons.",
+        "INSIDE TRACK": "Mercury is the planet that orbits the closest to the Sun."
+      }
+    ]
+  },
+  "1": {
+    "name": "Venus",
+    "features": [
+      {
+        "SECOND ROCK": "Venus is the second closest planet to the Sun, orbiting at a distance of about 67 million miles (108 million kilometers)",
+        "TOXIC TWIN": "Venus is often called 'Earth’s twin' because they’re similar in size and structure, but Venus has extreme surface heat and a dense, toxic atmosphere."
+      }
+    ]
+  }
+}
