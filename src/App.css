@@ -29,6 +29,10 @@ body {
   color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 .menu {
   color: black;
   display: block;
@@ -213,39 +217,42 @@ body {
   list-style: none;
   aspect-ratio: 1;
   height: 2.2rem;
-  background-color: red;
   border-radius: 50%;
 }
 
-.hero__content__smallPlanets li:nth-of-type(1) {
+.hero__content__smallPlanets a {
+  border-radius: 50%;
+}
+
+.hero__content__smallPlanets a:nth-of-type(1) {
   background-color: #d3ba86;
 }
 
-.hero__content__smallPlanets li:nth-of-type(2) {
+.hero__content__smallPlanets a:nth-of-type(2) {
   background-color: #ae6516;
 }
 
-.hero__content__smallPlanets li:nth-of-type(3) {
+.hero__content__smallPlanets a:nth-of-type(3) {
   background-color: #156598;
 }
 
-.hero__content__smallPlanets li:nth-of-type(4) {
+.hero__content__smallPlanets a:nth-of-type(4) {
   background-color: #b44e28;
 }
 
-.hero__content__smallPlanets li:nth-of-type(5) {
+.hero__content__smallPlanets a:nth-of-type(5) {
   background-color: #c5aa99;
 }
 
-.hero__content__smallPlanets li:nth-of-type(6) {
+.hero__content__smallPlanets a:nth-of-type(6) {
   background-color: #c59f6b;
 }
 
-.hero__content__smallPlanets li:nth-of-type(7) {
+.hero__content__smallPlanets a:nth-of-type(7) {
   background-color: #9fc3c8;
 }
 
-.hero__content__smallPlanets li:nth-of-type(8) {
+.hero__content__smallPlanets a:nth-of-type(8) {
   background-color: #475ed6;
 }
 
@@ -336,5 +343,56 @@ body {
 .template__content__features li {
   list-style: none;
   margin-left: 2.5rem;
+}
+
+.footer {
+  height: 30rem;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__content {
+  height: 65%;
+  margin-left: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer__content::before {
+  content: "";
+  background-color: #f0f0f0;
+  aspect-ratio: 1;
+  width: 40rem;
+  display: block;
+  position: absolute;
+  top: -5rem;
+  left: -15rem;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.footer__content__paragraph {
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+  letter-spacing: 1.5px;
 }
 /*# sourceMappingURL=App.css.map */

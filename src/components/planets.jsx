@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Template1 } from "./planet_template";
 import mercury from "../assets/mercury.png";
 import venus from "../assets/venus.png";

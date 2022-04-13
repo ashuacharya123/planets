@@ -48,6 +48,9 @@ body {
   color: white;
 }
 
+a {
+  text-decoration: none;
+}
 //! HERO SECTION
 
 .menu {
@@ -213,9 +216,12 @@ body {
       list-style: none;
       aspect-ratio: 1;
       height: 2.2rem;
-      background-color: red;
-      border-radius: 50%;
 
+      border-radius: 50%;
+    }
+
+    a {
+      border-radius: 50%;
       &:nth-of-type(1) {
         background-color: $m;
       }
@@ -332,6 +338,49 @@ body {
     li {
       list-style: none;
       margin-left: 2.5rem;
+    }
+  }
+}
+
+//!   Footer section
+
+.footer {
+  height: 30rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__content {
+    height: 65%;
+    margin-left: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    &::before {
+      content: "";
+      background-color: $white;
+      aspect-ratio: 1;
+
+      width: 40rem;
+      display: block;
+      position: absolute;
+      top: -5rem;
+      left: -15rem;
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    &__image {
+      img {
+      }
+    }
+
+    &__paragraph {
+      text-transform: uppercase;
+      color: black;
+      font-weight: $font-semi-bold;
+      letter-spacing: 1.5px;
     }
   }
 }

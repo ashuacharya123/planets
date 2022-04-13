@@ -52,20 +52,38 @@ const Hero = () => {
             Know more about the planets
           </h3>
           <div className="hero__content__smallPlanets">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <a href="#Mercury">
+              <li></li>
+            </a>
+            <a href="#Venus">
+              <li></li>
+            </a>
+            <a href="#Earth">
+              <li></li>
+            </a>
+            <a href="#Mars">
+              <li></li>
+            </a>
+            <a href="#Jupiter">
+              <li></li>
+            </a>
+            <a href="#Saturn">
+              <li></li>
+            </a>
+            <a href="#Uranus">
+              <li></li>
+            </a>
+            <a href="#Neptune">
+              <li></li>
+            </a>
           </div>
           <div className="hero__content__btn">
-            <button type="button" className="hero__content__btn__btn">
-              Explore
-              <img src={planet_icon} alt="planet icon" />
-            </button>
+            <a href="#Explore">
+              <button type="button" className="hero__content__btn__btn">
+                Explore
+                <img src={planet_icon} alt="planet icon" />
+              </button>
+            </a>
           </div>
         </div>
       </div>

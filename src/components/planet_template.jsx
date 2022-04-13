@@ -2,9 +2,9 @@ import React from "react";
 import data from "../data/planets.json";
 
 export const Template1 = (planet) => {
-  console.log(planet.id);
-  console.log();
-  const feature = Object.keys(data[0].features[0]);
+  // console.log(planet.id);
+  // console.log(Object.keys(data[planet.id].features[0]));
+  const feature = Object.keys(data[planet.id].features[0]);
 
   //   if (planet.id % 2 === 0) return;
 
@@ -12,8 +12,8 @@ export const Template1 = (planet) => {
     <div className="template__container">
       <div className="template__content">
         <div className="template__content__background">
-          <div className="image">
-            <div id="name">{data[0].name}</div>
+          <div className="image" id={data[planet.id].name}>
+            <div id="name">{data[planet.id].name}</div>
             <div className="image__in">
               <img
                 src={planet.props}
