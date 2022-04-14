@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/planets/static/css/main.694fbf6f.css",
+    "main.js": "/planets/static/js/main.579add43.js",
+    "static/js/787.367c0aec.chunk.js": "/planets/static/js/787.367c0aec.chunk.js",
+    "static/media/footer.png": "/planets/static/media/footer.9956d3ae64d460e096af.png",
+    "static/media/earth.png": "/planets/static/media/earth.b68594be553143e0c66e.png",
+    "static/media/venus.png": "/planets/static/media/venus.6844cb0c883930c8bd93.png",
+    "static/media/neptune.png": "/planets/static/media/neptune.cd4ae10e98b553c7eec0.png",
+    "static/media/jupiter.png": "/planets/static/media/jupiter.df67848c4eb69eef89c0.png",
+    "static/media/mercury.png": "/planets/static/media/mercury.f06108eedbf52b9b01fa.png",
+    "static/media/mars.png": "/planets/static/media/mars.55f9ef6e7a0fa710d0fe.png",
+    "static/media/back__pc.png": "/planets/static/media/back__pc.577d9768c6f104bf2409.png",
+    "static/media/saturn.png": "/planets/static/media/saturn.92f786bfb5ce85e7965b.png",
+    "static/media/astraughnout_pc.png": "/planets/static/media/astraughnout_pc.59af216b10f3698e00b0.png",
+    "static/media/uranus.png": "/planets/static/media/uranus.26043d3022d34f28ab1d.png",
+    "static/media/background_mobile.png": "/planets/static/media/background_mobile.ba9f328effe02bddc4f3.png",
+    "static/media/astraugnout.png": "/planets/static/media/astraugnout.96fefc12433166e748d3.png",
+    "static/media/Logo.svg": "/planets/static/media/Logo.cce9c7a147c19f99bb640b6e40d2a787.svg",
+    "static/media/ion_planet-sharp.svg": "/planets/static/media/ion_planet-sharp.5f296f54259a91533519c8102dc74d38.svg",
+    "static/media/arrow__pc.svg": "/planets/static/media/arrow__pc.04ddd8911e04391231b7.svg",
+    "static/media/Arrow1.svg": "/planets/static/media/Arrow1.c350409e95225f540e40.svg",
+    "index.html": "/planets/index.html",
+    "static/media/Arrow.svg": "/planets/static/media/Arrow.17fe956aa986760a92e8.svg",
+    "main.694fbf6f.css.map": "/planets/static/css/main.694fbf6f.css.map",
+    "main.579add43.js.map": "/planets/static/js/main.579add43.js.map",
+    "787.367c0aec.chunk.js.map": "/planets/static/js/787.367c0aec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.694fbf6f.css",
+    "static/js/main.579add43.js"
+  ]
+}
