@@ -1,4 +1,5 @@
 import React from "react";
+import planet_icon from "../assets/ion_planet-sharp.svg";
 
 const Contacts = () => {
   return (
@@ -12,7 +13,10 @@ const Contacts = () => {
           <input type="email" />
           <p>Message</p>
           <input type="text" />
-          <button>Contact Us</button>
+          <button>
+            Contact Us
+            <img src={planet_icon} alt="icon" />
+          </button>
         </div>
       </div>
     </section>

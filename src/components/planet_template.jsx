@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import data from "../data/planets.json";
 
 export const Template1 = (planet) => {
@@ -7,15 +7,16 @@ export const Template1 = (planet) => {
   const feature = Object.keys(data[planet.id].features[0]);
   const point = Object.values(data[planet.id].features[0]);
 
-  //   if (planet.id % 2 === 0) return;
+  let rowReverse = false;
+  if (planet.id % 2 !== 0) rowReverse = true;
 
   return (
     <div className="template__container">
-      <div className="template__content">
+      <div className="template__content" id={rowReverse ? "rowReverse" : ""}>
         <div className="template__content__background">
           <div className="image" id={data[planet.id].name}>
             <div id="name">{data[planet.id].name}</div>
-            <div className="image__in">
+            <div className="image__in" number={planet.id === 0 ? "1" : ""}>
               <img
                 src={planet.props}
                 alt="planet"
