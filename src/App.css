@@ -13,6 +13,14 @@
           transform: translateY(-8rem);
 }
 
+@media screen and (max-width: 350px) {
+  #name {
+    font-size: 7rem;
+    -webkit-transform: translateY(-6rem);
+            transform: translateY(-6rem);
+  }
+}
+
 #scale {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
@@ -119,6 +127,18 @@ a {
 .hero__container {
   width: 100%;
   height: 100vh;
+}
+
+@media screen and (max-height: 640px) {
+  .hero__container {
+    height: 115vh;
+  }
+}
+
+@media screen and (max-height: 540px) {
+  .hero__container {
+    height: 130vh;
+  }
 }
 
 .hero__container::before {
@@ -453,6 +473,12 @@ a {
   opacity: 50%;
   line-height: 8rem;
   margin-top: 8rem;
+}
+
+@media screen and (max-width: 340px) {
+  .contact__content__heading {
+    font-size: 6rem;
+  }
 }
 
 .contact__content__heading::after {

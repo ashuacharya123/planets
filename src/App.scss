@@ -33,6 +33,11 @@ $n: #475ed6;
   letter-spacing: 2.5px;
   margin-left: 1rem;
   transform: translateY(-8rem);
+
+  @media screen and (max-width: 350px) {
+    font-size: 7rem;
+    transform: translateY(-6rem);
+  }
 }
 
 #scale {
@@ -127,6 +132,13 @@ a {
 .hero__container {
   width: 100%;
   height: 100vh;
+
+  @media screen and (max-height: 640px) {
+    height: 115vh;
+  }
+  @media screen and (max-height: 540px) {
+    height: 130vh;
+  }
 
   &::before {
     content: "";
@@ -442,6 +454,10 @@ a {
     line-height: 8rem;
     margin-top: 8rem;
 
+    @media screen and (max-width: 340px) {
+      font-size: 6rem;
+    }
+
     &::after {
       content: " ";
       display: inline-block;
@@ -540,3 +556,5 @@ a {
     }
   }
 }
+
+//! Adjusting for my laptop
