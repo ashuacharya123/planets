@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import data from "../data/planets.json";
 
 export const Template1 = (planet) => {
