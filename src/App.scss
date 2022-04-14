@@ -1,6 +1,8 @@
 $background-color: black;
 $white: #f0f0f0;
 $template-bg: #1f1f1f;
+$template-bg2: #363636;
+$count-color: #c4c4c4;
 
 $font-extra-light: 200;
 $font-light: 300;
@@ -290,7 +292,7 @@ a {
 //!   PLANETS section
 
 .planets__container {
-  background-color: #363636;
+  background-color: $template-bg2;
   padding-top: 1rem;
 }
 
@@ -298,11 +300,11 @@ a {
 }
 
 .template__container {
-  background-color: #363636;
+  background-color: $template-bg2;
 }
 
 .template__content {
-  background-color: #1f1f1f;
+  background-color: $template-bg;
 
   &__background {
     margin: 0 auto;
@@ -335,12 +337,166 @@ a {
   }
 
   &__features {
+    margin: 4rem 2rem 0rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+
     li {
       list-style: none;
-      margin-left: 2.5rem;
+      font-weight: $font-medium;
+      font-size: 1.85rem;
+      letter-spacing: 2.5px;
+      margin-top: 1rem;
+    }
+
+    &__card {
+      &[number="2"] {
+        grid-area: 2;
+      }
+      &[number="3"] {
+        grid-area: 3;
+        padding-bottom: 5rem;
+      }
+
+      &__count {
+        color: black;
+        display: inline-block;
+        border-radius: 50%;
+        aspect-ratio: 1;
+        height: 5rem;
+        text-align: center;
+        font-weight: $font-semi-bold;
+        font-size: 3rem;
+        position: relative;
+        z-index: 2;
+
+        &::before {
+          content: " ";
+          display: block;
+          position: absolute;
+          height: 100%;
+          aspect-ratio: 1;
+          background-color: $count-color;
+          border-radius: 50%;
+          z-index: -1;
+          top: -0.6rem;
+        }
+      }
+      p {
+        letter-spacing: 1.5px;
+        font-weight: $font-medium;
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        margin-top: 1rem;
+      }
     }
   }
 }
+
+//! planets Section end
+
+//!  Contact Section
+
+.contact__container {
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (min-height: 700px) {
+    height: 100vh;
+  }
+  @media screen and (max-height: 650px) {
+    height: 140vh;
+  }
+  @media screen and (max-height: 450px) {
+    height: 180vh;
+  }
+
+  &::after {
+    content: " ";
+    display: inline-block;
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+    height: 80%;
+    background-image: url(./assets/astraugnout.png);
+
+    bottom: 0%;
+    right: 0rem;
+    z-index: -1;
+  }
+}
+
+.contact__content {
+  margin: 0 2rem 0 2rem;
+  &__heading {
+    font-weight: $font-semi-bold;
+    letter-spacing: 1rem;
+    font-size: 8rem;
+    color: white;
+    opacity: 50%;
+    line-height: 8rem;
+    margin-top: 8rem;
+
+    &::after {
+      content: " ";
+      display: inline-block;
+      position: absolute;
+      background-image: url(./assets/Arrow1.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 15rem;
+      width: 10rem;
+    }
+  }
+
+  &__card {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+
+    p {
+      font-weight: $font-semi-bold;
+      font-size: 2rem;
+      position: relative;
+    }
+
+    input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid white;
+      opacity: 50%;
+      outline: none;
+      color: white;
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+    }
+
+    button {
+      width: 100%;
+      height: 5rem;
+      border: none;
+      border-radius: 0.5rem;
+      background-color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.9rem;
+      font-family: inherit;
+      font-weight: $font-bold;
+      letter-spacing: 2.5px;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  }
+}
+
+//!  Contact Section end
 
 //!   Footer section
 

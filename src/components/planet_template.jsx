@@ -3,8 +3,9 @@ import data from "../data/planets.json";
 
 export const Template1 = (planet) => {
   // console.log(planet.id);
-  // console.log(Object.keys(data[planet.id].features[0]));
+  // console.log(Object.values(data[planet.id].features[0])[0]);
   const feature = Object.keys(data[planet.id].features[0]);
+  const point = Object.values(data[planet.id].features[0]);
 
   //   if (planet.id % 2 === 0) return;
 
@@ -24,11 +25,31 @@ export const Template1 = (planet) => {
           </div>
         </div>
         <div className="template__content__features">
-          <li>{feature[0]}</li>
-          <li>{feature[1]}</li>
-          <li>{feature[2]}</li>
-          <li>{feature[3]}</li>
-          <li>{feature[4]}</li>
+          <div className="template__content__features__card">
+            <div className="template__content__features__card__count">1</div>
+            <li>{feature[0]}</li>
+            <p>{point[0]}</p>
+          </div>
+          <div className="template__content__features__card" number="2">
+            <div className="template__content__features__card__count">2</div>
+            <li>{feature[1]}</li>
+            <p>{point[1]}</p>
+          </div>
+          <div className="template__content__features__card" number="3">
+            <div className="template__content__features__card__count">3</div>
+            <li>{feature[2]}</li>
+            <p>{point[2]}</p>
+          </div>
+          <div className="template__content__features__card">
+            <div className="template__content__features__card__count">4</div>
+            <li>{feature[3]}</li>
+            <p>{point[3]}</p>
+          </div>
+          <div className="template__content__features__card">
+            <div className="template__content__features__card__count">5</div>
+            <li>{feature[4]}</li>
+            <p>{point[4]}</p>
+          </div>
         </div>
       </div>
     </div>
