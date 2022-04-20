@@ -885,9 +885,10 @@ a {
     display: block;
     position: absolute;
     height: 100%;
-    width: 100%;
-    top: 5rem;
-    background-image: url(./assets/back__pc.png);
+    width: 70%;
+    top: 0rem;
+    right: 0;
+    background-image: url(./assets/bg-croped.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 0;
