@@ -7,7 +7,7 @@ import Contacts from "./components/contacts.jsx";
 
 function App() {
   return (
-    <div>
+    <div className="CONTAINER">
       <Hero />
       <Planets />
       <Contacts />

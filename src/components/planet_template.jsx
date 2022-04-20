@@ -25,7 +25,7 @@ export const Template1 = (planet) => {
             </div>
           </div>
         </div>
-        <div className="template__content__features">
+        <div className="template__content__features ">
           <div className="template__content__features__card">
             <div className="template__content__features__card__count">1</div>
             <li>{feature[0]}</li>
